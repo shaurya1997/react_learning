@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<script >
+let str="";
+str=prompt("enter the lowercase string","");
+getFrequency(str);
+function getFrequency(str) {
+    var freq = {};
+    for (var i=0; i<str.length;i++) {
+        var character = str.charAt(i);
+        if (freq[character]) {
+           freq[character]++;
+        } else {
+           freq[character] = 1;
+        }
+    }
+
+ document.write(JSON.stringify(freq) );
+}
+</script>
+</body>
+
+
+</html>
